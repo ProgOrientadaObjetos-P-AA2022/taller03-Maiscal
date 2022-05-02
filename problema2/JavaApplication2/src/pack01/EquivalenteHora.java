@@ -15,34 +15,24 @@ public class EquivalenteHora {
     private int segundo;
     private int dias;
     
+    
     public void establecerHoras(int c){
         horas = c;
     }
-    
-    //Calcular Minutos
-    public void establecerMinutos(){
-        if(horas > 0){
-            minutos = horas * 60;
-        }
+    public void establecerDias(){
+        dias = horas / 24;
     }
-    //Calcular Segundos
+    public void establecerMinutos(){
+            minutos = horas * 60;
+    }
     public void establecerSegundos(){
-        if(minutos > 0 )
             segundo = minutos * 60;
     }
-    //Calcular Dias
-    public void establecerDias(){
-        if(horas >= 24){
-            dias = horas / 24;
-        }
-    }
     
-    //Calcular dias a lo demas
-    public int calcularDM(){
-        establecerHoras(dias);
-        
-    }
     
+    public int obtenerDias(){
+        return dias;
+    }
     public int obtenerHoras(){
         return horas;
     }
@@ -51,8 +41,5 @@ public class EquivalenteHora {
     }
     public int obtenerSegundos(){
         return segundo;
-    }
-    public int obtenerDias(){
-        return dias;
     }
 }

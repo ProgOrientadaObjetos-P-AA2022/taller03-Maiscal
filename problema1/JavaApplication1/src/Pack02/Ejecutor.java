@@ -12,7 +12,7 @@ import Pack01.Terreno;
  */
 public class Ejecutor {
 
-    /**
+    /** 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -42,7 +42,8 @@ public class Ejecutor {
                 ,objT01.obtenerAncho()
                 ,objT01.obtenerValorMetroCuadrado()
                 ,objT01.obtenerCalcularArea()
-                ,objT01.obtenerCosto_Terreno());
+                ,objT01.obtenerCosto_Terreno()
+        );
         System.out.println("*************");
         
         
@@ -67,7 +68,8 @@ public class Ejecutor {
                 ,objT02.obtenerAncho()
                 ,objT02.obtenerValorMetroCuadrado()
                 ,objT02.obtenerCalcularArea()
-                ,objT02.obtenerCosto_Terreno());
+                ,objT02.obtenerCosto_Terreno()
+        );
         System.out.println("*************");
         
         
